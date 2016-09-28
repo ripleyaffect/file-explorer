@@ -72,11 +72,12 @@
 }
 
 .hljs {
-  height: calc(100% - 30px;);
-  padding: 10px;
+  height: calc(600px - 55px);
   padding-top: 20px;
   background-color: #37474F;
   font-family: "inconsolata", monospace;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 pre, code {
