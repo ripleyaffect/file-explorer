@@ -94,13 +94,14 @@ To sit on my throne as the Prince of Bel-Air
         type: 'txt',
       },
       {
-        content: `def greet(name):
-        """Return the passed \`name\` with a greeting a the beginning
+        content: `
+def greet(name):
+    """Return the passed \`name\` with a greeting a the beginning
 
-        :param name: \`str\` name to greet
-        """
-        return "Hello {}".format(name)
-    `,
+    :param name: \`str\` name to greet
+    """
+    return "Hello {}".format(name)
+`,
         name: 'hello.py',
         id: 4,
         type: 'py'
@@ -238,7 +239,6 @@ class FileStructureExplorer extends Component {
 }
 
 export default FileStructureExplorer;
-
     `,
         name: 'Highlight.jsx',
         id: 5,
@@ -346,7 +346,7 @@ const SidebarFileOrDirectory = ({ type, onClickSidebarFile, ...props }) => {
 const FileBuffer = ({ content, type }) => {
   return <Highlight
       className="file-structure-explorer-file-buffer"
-      language={type}>
+      language={type === 'txt' ? 'md' : type}>
     {content}
   </Highlight>
 }

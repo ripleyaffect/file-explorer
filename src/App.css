@@ -76,10 +76,11 @@
   padding: 10px;
   padding-top: 20px;
   background-color: #37474F;
+  font-family: "inconsolata", monospace;
 }
 
 pre, code {
-  font-family: "inconsolata" monospace;
+  font-family: "inconsolata", monospace;
   margin-top: 0;
   margin-bottom: 0;
 }
