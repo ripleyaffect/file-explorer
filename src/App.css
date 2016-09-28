@@ -79,7 +79,7 @@
 }
 
 pre, code {
-  font-family: "inconsolata";
+  font-family: "inconsolata" monospace;
   margin-top: 0;
   margin-bottom: 0;
 }
